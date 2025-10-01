@@ -1,6 +1,4 @@
-# ei-campus-drive-project
-
-Real Time Chat Application-Exercise 2
+# Real Time Chat Application-Exercise 2
 
 A simple real-time chat application where users can join different chat rooms or create their own chat rooms. Users should be able to send and receive messages in real-time.
 Realtime Chat Application
@@ -8,55 +6,43 @@ Realtime Chat Application
 Overview
 
 This project is a Realtime Chat Application that enables users to send and receive messages instantly. The system leverages design patterns such as Singleton, Observer, and Factory to provide a scalable, modular, and maintainable architecture. The chat application supports multiple users, message broadcasting, and real-time updates.
-
 Design Patterns
-Singleton Pattern
 
+Singleton Pattern
 The Singleton pattern ensures that only one instance of critical components exists across the application, allowing shared resources and consistent state management.
 
-ChatServer: Maintains the central server instance responsible for managing all connected clients and message broadcasting.
-
-DatabaseConnection: Manages database interactions such as storing user details and chat history.
+  ChatServer: Maintains the central server instance responsible for managing all connected clients and message broadcasting.
+  DatabaseConnection: Manages database interactions such as storing user details and chat history.
 
 Observer Pattern
 
 The Observer pattern is used to notify clients about new messages or user events. When one user sends a message, all connected observers (other users) receive real-time updates.
-
-ClientHandler: Acts as an observer for incoming messages from the server.
-
-ChatServer: Acts as the subject, notifying all subscribed clients of new messages.
+  ClientHandler: Acts as an observer for incoming messages from the server.
+  ChatServer: Acts as the subject, notifying all subscribed clients of new messages.
 
 Factory Pattern
-
-The Factory pattern is used to create different types of messages or clients dynamically, without tightly coupling the code to specific classes.
+  The Factory pattern is used to create different types of messages or clients dynamically, without tightly coupling the code to specific classes.
 
 MessageFactory: Creates different message types such as TextMessage, ImageMessage, or SystemMessage.
-
 ClientFactory: Generates client objects with roles like AdminClient or RegularClient.
 
 Features
 User Authentication
-
-Users authenticate with unique usernames before joining the chat. Authentication ensures proper user identification and role management.
+  Users authenticate with unique usernames before joining the chat. Authentication ensures proper user identification and role  management.
 
 Realtime Messaging
-
 Messages sent by one user are instantly broadcast to all other connected users using the Observer pattern.
 
 Multiple Clients
-
 The server handles multiple clients simultaneously, allowing group chat functionality.
 
 Message Types
-
 Supports multiple message formats (text, system notifications, images) through the Factory pattern.
 
 Chat History
-
 Messages are stored in the database for retrieval, providing users with persistent chat history.
 
 Edge Cases
-
 Duplicate Usernames: The server rejects login attempts with duplicate usernames.
 
 Server Crash: Singleton ensures that only one server instance is created and restarted if needed.
@@ -65,14 +51,14 @@ Connection Drop: If a user disconnects unexpectedly, the system cleans up the se
 
 Invalid Message Format: Factory pattern prevents malformed message objects by validating before creation.
 
-Getting Started
-Prerequisites
-
-Java JDK 17+
-
-IntelliJ IDEA / Eclipse
-
-Maven or Gradle
+Getting Started:
+  Prerequisites
+  
+  Java JDK 17+
+  
+  IntelliJ IDEA / Eclipse
+  
+  Maven or Gradle
 
 Installation
 
@@ -83,7 +69,7 @@ git clone https://github.com/mcharumathi23-spec/ei-campus-drive-project.git
 
 Navigate to the project directory:
 
-cd mini-project-chat
+cd ei-campus-drive-project
 
 
 Build the project:
@@ -94,12 +80,12 @@ Running the Application
 
 Start the chat server:
 
-java -cp target/mini-project-chat.jar com.ei.chat.ChatServer
+java -cp target/ei-campus-drive-project.jar com.ei.chat.ChatServer
 
 
 Start client instances:
 
-java -cp target/mini-project-chat.jar com.ei.chat.ChatClient
+java -cp target/ei-campus-drive-project.jar com.ei.chat.ChatClient
 
 Inputs
 
