@@ -1,6 +1,10 @@
 # ei-campus-drive-project
-a simple real-time chat application where users can join different chat rooms or create their own chat rooms. Users should be able to send and receive messages in real-time.
+
+Real Time Chat Application-Exercise 2
+
+A simple real-time chat application where users can join different chat rooms or create their own chat rooms. Users should be able to send and receive messages in real-time.
 Realtime Chat Application
+
 Overview
 
 This project is a Realtime Chat Application that enables users to send and receive messages instantly. The system leverages design patterns such as Singleton, Observer, and Factory to provide a scalable, modular, and maintainable architecture. The chat application supports multiple users, message broadcasting, and real-time updates.
@@ -79,7 +83,7 @@ git clone https://github.com/mcharumathi23-spec/ei-campus-drive-project.git
 
 Navigate to the project directory:
 
-cd RealtimeChatApplication
+cd mini-project-chat
 
 
 Build the project:
@@ -90,12 +94,12 @@ Running the Application
 
 Start the chat server:
 
-java -cp target/realtime-chat-app.jar com.ei.chat.ChatServer
+java -cp target/mini-project-chat.jar com.ei.chat.ChatServer
 
 
 Start client instances:
 
-java -cp target/realtime-chat-app.jar com.ei.chat.ChatClient
+java -cp target/mini-project-chat.jar com.ei.chat.ChatClient
 
 Inputs
 
